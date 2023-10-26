@@ -1,0 +1,103 @@
+.country-body {
+  display: block;
+}
+
+.country-flag {
+  margin-bottom: 50px;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.country-name {
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 30px;
+  text-transform: capitalize;
+}
+
+
+.country-summary-info-one {
+  margin-bottom: 50px;
+}
+
+.country-summary-field {
+  display: flex;
+  margin-bottom: 16px;
+  text-transform: capitalize;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.country-summary-label {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 0;
+  padding-right: 5px;
+}
+
+.country-summary-value {
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 0;
+}
+
+.country-summary-value.lowercase {
+  text-transform: lowercase;
+}
+
+
+@media only screen and (min-width: 520px) {
+  .country-flag {
+    margin-bottom: 70px;
+  }
+
+  .country-name {
+    margin-bottom: 35px;
+  }
+
+  .country-summary-info {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .country-summary-info-one,
+  .country-summary-info-two {
+    margin-bottom: 0;
+  }
+
+  .country-summary-field {
+    margin-bottom: 7px;
+  }
+}
+
+
+@media only screen and (min-width: 900px) {
+  .country-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .country-flag {
+    width: 45%;
+    height: 430px;
+    margin-bottom: 0;
+  }
+
+  .country-summary {
+    width: 52%;
+  }
+
+  .country-summary-info-one,
+  .country-summary-info-two {
+    max-width: 250px;
+    min-width: 180px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .country-summary {
+    width: 45%;
+  }
+}

@@ -1,0 +1,51 @@
+@keyframes spinnerAnimation {
+  from {
+    transform: rotate(0turn);
+  }
+
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+
+.error-wrapper,
+.loader-wrapper {
+  padding-top: 50px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.loader-main {
+  display: inline-block;
+  border-style: solid;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  animation: spinnerAnimation 1s ease infinite;
+  border-top-color: white;
+  width: 40px;
+  height: 40px;
+  border-width: 4px;
+}
+
+.error-message,
+.loader-message {
+  font-weight: 600;
+  text-align: center;
+}
+
+.loader-message {
+  color: white;
+  font-size: 16px;
+}
+
+.error-message {
+  color: red;
+  font-size: 30px;
+}
